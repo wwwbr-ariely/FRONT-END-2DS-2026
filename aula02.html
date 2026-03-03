@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula02 - menu hamburguer</title>
+
+<style>
+  .navbar {
+    background-color: rgb(4, 4, 122);
+  }
+  .logo {
+    color:white ;
+    font-size: 80%;
+  }
+
+ /*Estilo de lista*/
+ .nav-links{
+    list-style: none;
+    display: flex; /*Exibe horizontalmente o menu*/
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+ }
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+/*Estilo do Botão Hamburguer (escondido no desktop)*/
+.hamburguer{
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsividade*/
+@media screen and (max-width: 768px) {
+  .hamburguer{
+    /*mostra o botão hamburguer*/
+    display: block;
+  }
+
+  /*Esconde a lista e muda o layout para a vertical*/
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /*altura da navbar*/
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  /*Classe que será adicionada ao javascript para mostrar*/
+  
+}
+
+</style>
+
+</head>
+
+<body  background="https://wallpapers.com/images/featured/fundo-pastel-azul-sygqo9ddabp5pbql.jpg">
+    
+    <nav class="navbar">
+        <div class="logo">Meu site</div>
+
+        <!--Botão Hamburguer para responsividade-->
+        <button class="hamburguer" id="hamburguer-btn">
+    &#9776; <!--Símbolo do ícone de menu-->
+        </button>
+
+        <!--Lista de itens do menu-->
+        <ul class="nav-links" id="nav-links">
+            <li>
+              <a href="https://www.amazon.com.br/">Início</a>  
+            </li>
+            <li>
+              <a href="https://poki.com/br">Sobre</a>  
+            </li>
+            <li>
+              <a href="https://www.youtube.com.br/">Serviços</a>  
+            </li>
+            <li>
+              <a href="https://www.linkedin.com.br/">Contato</a>  
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <h1 style="background-color: #477beb;">Conteúdo da página</h1>
+        <p><b>Redimensione a janela do navegador para ver o menu mudar.</b></p>
+    </div>
+
+    <a href="" style="text-decoration: none; color: red;">qualquer coisa</a>
+
+    <script>
+      alert("Anjos caídos!!!")
+    </script>
+</body>
+</html>
