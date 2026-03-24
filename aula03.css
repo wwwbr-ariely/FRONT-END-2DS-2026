@@ -24,12 +24,12 @@ body{
 
 .carousel-slides{
     display: flex;
-    width: 30%;
+    width: 300%;
     height: 100%;
-    animation: slide 15s infinite;
+    animation: slides 15s infinite;
 }
 
-.slide {
+.slides {
     width: 100%;
     height: 100%;
     display: flex;
@@ -41,17 +41,17 @@ body{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.slide:nth-child(1) {
+.slides:nth-child(1) {
     background: linear-gradient(45deg, #ff6b6b, #feca57);
 }
-.slide:nth-child(2) {
+.slides:nth-child(2) {
     background: linear-gradient(45deg, #5f27cd, #48dbfb);
 }
-.slide:nth-child(3) {
+.slides:nth-child(3) {
     background: linear-gradient(45deg, #1dd1a1, #10ac84);
 }
 
-@keyframes slide {
+@keyframes slides {
     0%, 30% {
         transform: translateX(0);
     }
@@ -75,19 +75,83 @@ body{
     gap: 10px;
 }
 
-.indicator {
+.indicators {
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.5);
 }
 
-.indicator:nth-child(1) {
+.indicators:nth-child(1) {
     animation-delay: 0s;
 }
-.indicator:nth-child(2) {
+.indicators:nth-child(2) {
     animation-delay: 5s;
 }
-.indicator:nth-child(3) {
+.indicators:nth-child(3) {
     animation-delay: 10s;
 }
+
+@keyframes indicator {
+    0%, 30%, 100% {
+
+    background: rgba(255, 255, 255, 0.5);
+}
+   33%, 63% {
+    background: white;
+   }
+   66%, 96% {
+    background: rgba(255, 255, 255, 0.5);
+   }
+}
+
+.indicators:nth-child(2){
+    animation: indicators2 15s infinite;
+}
+.indicators:nth-child(3){
+    animation: indicators3 15s infinite;
+}
+
+   @keyframes indicator2 {
+    0%, 30%, 100% {
+
+    background: rgba(255, 255, 255, 0.5);
+}
+   33%, 63% {
+    background: white;
+   }
+   66%, 96% {
+    background: rgba(255, 255, 255, 0.5);
+   }
+}
+
+.indicators:nth-child(2){
+    animation: indicators2 15s infinite;
+}
+.indicators:nth-child(3){
+    animation: indicators3 15s infinite;
+}
+
+  @keyframes indicator3 {
+    0%, 30%, 100% {
+
+    background: rgba(255, 255, 255, 0.5);
+}
+   33%, 63% {
+    background: white;
+   }
+   66%, 96% {
+    background: rgba(255, 255, 255, 0.5);
+   }
+}
+
+.indicators:nth-child(2){
+    animation: indicators2 15s infinite;
+}
+.indicators:nth-child(3){
+    animation: indicators3 15s infinite;
+}
+
+
+
+  
