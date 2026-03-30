@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #667eea, 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #f634e9, 0%, #ff32dd 100%);
 }
 
 /* CARD PRINCIPAL */
@@ -28,7 +28,7 @@ body{
 }
 
 .form-container:hover {
-    transform: translateY(-5px)
+    transform: translateY(-5px);
 }
 
 .form-container h2 {
@@ -66,4 +66,51 @@ body{
     font-size: 14px;
     transition: all 0.3s ease;
     background-color: #f9f9f9;
+}
+
+.input-group input:focus {
+    border-color: #730e53;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(118, 75, 162, 0.1);
+
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #b21f77, #ab1989);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(240, 3, 173, 0.748);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(163, 4, 70, 0.6);
+
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.foorter-link {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #666;
+}
+
+.foorter-link a {
+    color: #630127;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.foorter-link a:hover {
+    text-decoration: underline;
 }
