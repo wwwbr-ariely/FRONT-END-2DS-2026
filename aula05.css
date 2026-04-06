@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+     width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    border: 3px solid red;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.linha {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+}
